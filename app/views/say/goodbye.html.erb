@@ -3,6 +3,12 @@
   It was nice having you here.
 </p>
 
+<ul>
+  <% @files.each do |file| %>
+    file name is: <%= file %>
+    <% end %>
+</ul>
+
 <p>
   Say
   <%= link_to "Hello", say_hello_path %> again.
